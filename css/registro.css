@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #f1eeee;
+    font-family: sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px #c2b3b2 solid;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+    text-align: right;
+}
+
+.p-login {
+    color: black;
+}
+
+.p-login a {
+    color: #c2b3b2;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.p-login a:hover {
+    color: rgba(234, 33, 33);
+}
+
+.reset-password {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.reset-password:hover {
+    color: rgba(234, 33, 33);
+}
+
+a:link {
+    color: #fff;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgba(234, 33, 33);
+}
+
+.div-logo-header {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 1px #c2b3b2 solid;
+}
+
+.div-logo-header img {
+    width: 150px;
+    margin: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+.div-logo {
+    background-color: #333;
+    border-top: 1px #c2b3b2 solid;
+    border-bottom: 1px #c2b3b2 solid;
+}
+
+.div-logo img {
+    width: 130px;
+    margin: 10px;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-formulario {
+    background: linear-gradient(rgba(5, 7, 12, 0.5),rgba(5, 7, 12, 0.5)), url(imagenes/formulario.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario {
+    background: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5rem 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+    text-align: center;
+}
+
+.formulario h2 {
+    color: black;
+    font-size: 2rem;
+}
+
+.form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.div-form {
+    position: relative;
+    color: #5757577e;
+}
+
+.input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px #5757577e solid;
+}
+
+.input:focus,
+.input:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgba(234, 33, 33);
+}
+
+.label {
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+}
+.form-submit {
+    background: rgba(234, 33, 33);
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(234, 33, 33);
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.input:focus ~ .form-line,
+.input:not(:placeholder-shown) ~ .form-line {
+    transform: scale(1);
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    margin: 0;
+}
+
+footer p {
+    background: none;
+    font-size: 12px;
+}
